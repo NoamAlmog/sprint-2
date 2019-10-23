@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Ultimate Meme</title>
+</head>
+<body onload="init()">
+    <header>
+        <section class="Logo">
+                <a href="http://127.0.0.1:5500/index.html" class="Logo"> <p>Meme-Me</p></a>
+            </section>
+            <section class="My-Nav">
+                <a href="" class="Gallery">Gallery</a>
+                <a href="About">about</a>
+            </section>
+    </header>
+    <main>
+            <section class="container">
+                    <section class="gallery-head">
+                    <h3 class="gallery-title">Meme Gallery</h3>
+                    </section>
+        
+                    <section class="gallery-content"></section>
+                    
+                    <!-- <section class="page-controller">
+                     <button class="page-btn">&#x2190 Previous</button>
+                     <button class="page-btn">Next &#x2192</button> -->
+                    </section>
+                </section>
+                
+                <section class="modal" >
+                    <button class="close-modal-btn" onclick="closeModal()">X</button>
+                    <input type="text" class="dynamicText" placeholder="type here">
+                    <button id="myText" onclick="myFunction(this)">accept</button>
+                    <button class="download-meme" title="Download" onclick="downloadCanvasImage(this)" >&#x2B07</button>
+                    <canvas id="myCanvas" ></canvas>
+                    
+                </section>
+            </main>
+    </main>
+    <footer>
+        <section >
+                <h4>Coffee-Rights</h4>
+        </section>
+    </footer>
+
+    <a href="" id="download-canvas"></a>
+
+
+    <script src="js/meme-service.js"></script>
+    <script src="js/canvas-service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
